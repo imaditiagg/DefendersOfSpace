@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Time Over</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+            }
+            .over{
+                margin-top: 250px;
+               margin-left: 150px;
+                position: absolute;
+                color:white;
+                font-size: 35px;
+            }
+        </style>
+        <script>
+ 	function preventBack(){window.history.forward();}
+ 	  setTimeout("preventBack()", 0);
+ 	  window.onunload=function(){null};
+ 	</script>
+    </head>
+    <body>
+        
+        <img src="over.jpeg" style="height:650px;width:1400px;position:absolute;size:cover;margin-top:0px;margin-left: 0px">
+        <div class="over" >
+        <h2 style="text-align:center">Time Over!!</h2>
+        <h3>You could not assemble all the pieces of puzzle to get your code.</h3>
+        </div>
+    </body>
+</html>

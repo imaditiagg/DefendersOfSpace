@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Game Over</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin:0;
+                padding: 0;
+            }
+            body, html {
+    height: 100%;
+    margin: 0; 
+       padding: 0;
+   
+    
+}
+            #over{
+                display: block;
+                background-image: url('lost.jpg');
+                height: 100%; 
+                
+                -webkit-background-size: cover;
+         -moz-background-size: cover;
+           -o-background-size: cover;
+          background-size: cover;
+            }
+            .pp{
+                text-align: center;
+               padding-top:200px;
+               font-weight: bolder;
+               font-size: 40px;
+               font-family: cursive;
+              text-shadow:0px 0px 30px #FF0000,2px 2px 5px #0000FF ;
+               
+            }
+            </style>
+            <script>
+ 	function preventBack(){window.history.forward();}
+ 	  setTimeout("preventBack()", 0);
+ 	  window.onunload=function(){null};
+ 	</script>
+    </head>
+    <body>
+        <div id='over'>
+            <p class='pp'>Uggghhh...<br> You could not collect all pieces for the final puzzle.</p>
+        </div>
+    </body>
+</html>
